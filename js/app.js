@@ -14,7 +14,7 @@ function activateAnimation() {
 const animate = elem => {
   //half of the parent element
   let activateAt =
-    window.scrollY + window.innerHeight - elem.scrollHeight - 500;
+    window.scrollY + window.innerHeight - elem.scrollHeight - 320;
   // distance from bottom of the div to the top
   const divBottom = elem.offsetTop + elem.scrollHeight;
   let halfShown = activateAt > elem.offsetTop;
@@ -107,7 +107,18 @@ const validateInputs = inputs => {
 
 //-------------------------------------------------------------------------------
 
-//smooth scroll
+//smooth scroll------------------------------------------------------------------
 var scroll = new SmoothScroll('a[href*="#"]', {
   speed: 800
 });
+//-------------------------------------------------------------------------------
+
+//parralax
+window.addEventListener('scroll', _.throttle(parallax, 15));
+function parallax() {
+  console.log('caca');
+  const parallaxBg = document.querySelector('.parallax-bg');
+  let scroll = window.scrollY;
+  parallaxBg.style.backgroundPosition = 'center ' + scroll * 0.45 + 'px';
+}
+//-------------------------------------------------------------------------------
