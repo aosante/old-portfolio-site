@@ -525,7 +525,7 @@ label {
     font-size: 1.5em; } }
 
 a.btn {
-  font-size: 1.2em;
+  font-size: 1em;
   letter-spacing: .125em; }
 
 @media (min-width: 760px) {
@@ -534,7 +534,7 @@ a.btn {
 
 @media (min-width: 980px) {
   a.btn {
-    font-size: 1.55em; } }
+    font-size: 1.4em; } }
 
 a.btn-ptoject {
   font-size: .7em; }
@@ -575,7 +575,7 @@ header {
 
 @media (min-width: 760px) {
   header {
-    background-size: 200%; } }
+    background-size: 250%; } }
 
 @media (min-width: 1030px) {
   header {
@@ -708,8 +708,14 @@ nav {
     opacify: 1;
     transform: scale(1); } }
   .hero .btn-hero {
-    margin-top: 5em;
-    position: relative; }
+    margin-top: 4em;
+    position: relative;
+    display: flex;
+    padding: .45em; }
+
+@media (min-width: 1030px) {
+  .hero .btn-hero {
+    margin-top: 2em; } }
 
 #skills {
   background-color: #f4f4f4;
@@ -878,7 +884,7 @@ nav {
 
 #about-title {
   color: #da328a;
-  margin-top: 1.6em; }
+  margin-top: .8em; }
 
 #skills #about-title::after {
   content: '';
@@ -1013,7 +1019,7 @@ nav {
 
 @media (min-width: 980px) {
   #projects .container .projects-container .project {
-    height: 20em; } }
+    height: 19em; } }
 
 @media (min-width: 1030px) {
   #projects .container .projects-container .project p.description {
@@ -1164,7 +1170,7 @@ footer {
 .btn-hero {
   display: flex;
   animation: fadeIn 2000ms ease 2.3s;
-  animation-fill-mode: both; }
+  animation-fill-mode: forwards; }
 
 .btn-primary {
   color: #fff;

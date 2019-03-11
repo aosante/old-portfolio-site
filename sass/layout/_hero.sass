@@ -10,7 +10,7 @@ header
     background-position: center
     background-repeat: no-repeat
     @media#{$mq-small}
-      background-size: 200%
+      background-size: 250%
     @media#{$mq-lg}
       background-size: 100%
     
@@ -128,8 +128,12 @@ nav
           opacify: 1
           transform: scale(1)
     .btn-hero
-      margin-top: 5em
+      margin-top: 4em
       position: relative
+      display: flex
+      padding: .45em 
+      @media#{$mq-lg}
+        margin-top: 2em
 
 
 
