@@ -1,0 +1,63 @@
+#contact
+    background-color: $main
+    h2
+        color: $white
+        &::after
+                content: ''
+                height: 2px
+                width: 20%
+                background-color: $secondary
+                display: block
+                margin: 0 auto
+                margin-top: .4em
+    .form-container
+        height: 90vh
+        display: flex
+        justify-content: center
+        align-items: center
+        form
+            border-radius: 5px
+            height: 80%
+            padding: 1em 1.5em
+            // box-shadow: 0 0 20px $secondary
+            display: flex
+            flex-direction: column
+            @media#{$mq-small}
+                width: 60%
+            .input-group
+                display: flex
+                flex-direction: column
+                text-align: left
+                margin-bottom: 1.2em
+                @media#{$mq-small}
+                    flex-direction: row
+                    justify-content: space-around
+                label
+                    margin-bottom: .3em
+                    @media#{$mq-small}
+                        flex: 1
+                .input.error
+                    border: 2px solid red 
+                input,textarea
+                    padding: .5em 1em
+                    background-color: rgb(38,38,38)
+                    border: none
+                    border-radius: 5px
+                    color: $white
+                    flex: 1
+                    &:focus
+                        outline: none
+                        border: 2px solid $secondary
+                        box-shadow: 0 0 10px $secondary
+            .btn-submit
+                background-color: transparent
+                margin-top: 1.3em
+                width: 40%
+                margin: 2em auto 0
+                &:hover
+                    background-color: $secondary
+                    transform: scale(1.05)
+                    cursor: pointer
+                @media#{$mq-lg}
+                    &:hover
+                        font-family: $cool-font

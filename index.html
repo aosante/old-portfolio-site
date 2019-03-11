@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <title>Andrés Osante</title>
+  </head>
+  <body>
+      <button class="scroll-top-btn"><a href="#header"> <i class="fa fa-chevron-up"></i> </a></button>
+    <header id="header">
+      <div class="video-wrap">
+        <video src="./waves.mov" autoplay="true" loop="true"></video>
+        <div class="video-overlay"></div>
+      </div>
+      <div class="container">
+      <nav>
+        <div class="logo">
+          <img src="./img/logo.png" alt="Andres Osante logo" />
+        </div>
+        <ul>
+          <li><a class="nav-link" href="#about-title" data-scroll>About</a></li>
+          <li><a class="nav-link" href="#skills-title" data-scroll> Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-scroll>Projects</a></li>
+          <li><a href="#contact" class="nav-link" data-scroll>Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>
+          Hi there! I'm
+          <span class="name">
+            <span>A</span> <span>n</span> <span>d</span> <span>r</span>
+            <span>é</span> <span>s</span>
+          </span>
+          , a Software Developer from
+          <span class="cr"> Costa Rica</span>
+        </h1>
+        <a href="#skills" class="btn btn-primary btn-hero"
+          >Let's Go
+          <ion-icon class="arrow" name="arrow-dropdown-circle"></ion-icon>
+        </a>
+      </div>
+    </div>
+    </header>
+    <main>
+      <section id="skills">
+        <h2 data-aos="fade-right" id="about-title">About</h2>
+        <!-- small about section -->
+        <div class="about">
+          <div class="personal-info" data-aos="zoom-in-up">
+            <h3>Get to know me</h3>
+            <p>
+              I'm a recent business graduate from Universidad de Costa Rica, and
+              I discovered programming 2 years ago. This is why I now
+              study Software Engineering at Universidad Cenfotec. Surfing, guitar and programming are the three things that constitute my free time. 
+            </p>
+            <p>
+              The latter, is something I've become very passionate about. Losing sleep practicing, with lots of tabs always open, and a vast YouTube watchlist with new topics to learn. 
+            </p>
+            <p>
+              I look forward to exercising this passion by working with you!
+            </p>
+          </div>
+          <div class="about-images">
+            <div class="card">
+              <img src="./img/surf.jpeg" alt="Surfing image" />
+              <p class="label">🏄‍♂️</p>
+            </div>
+            <div class="animated-parent me-image">
+            <div id="me" class="card">
+              <img src="./img/me.png" alt="Image of Andrés Osante" />
+              <p class="label">Me!</p>
+            </div>
+          </div>
+            <div class="card">
+              <img src="./img/coding.jpeg" alt="Image of Les Paul guitar" />
+              <p class="label">💻</p>
+            </div>
+          </div>
+        </div>
+        <!-- skills section -->
+        <!-- front end section -->
+        <h2 data-aos="fade-right" id="skills-title">Skills</h2>
+        <div class="skill-section">
+          <div class="skill-area animated-parent front-end">
+            <div class="area area1">
+              <h3 class="area-title" >Front End</h3>
+            </div>
+          </div>
+          <div class="list-area">
+            <div class="skill-images" data-aos="fade-left">
+              <img class="skill-image" src="./img/html.svg" alt="HTML5 logo" />
+              <img class="skill-image" src="./img/css.svg" alt="CSS3 logo" />
+              <img
+                src="./img/js.svg"
+                alt="JavaScript logo"
+                class="skill-image"
+              />
+              <img src="./img/sass.svg" alt="Sass logo" class="skill-image" />
+              <img
+                class="skill-image"
+                src="./img/bootstrap.svg"
+                alt="Bootstrap logo"
+              />
+              <img src="./img/react.svg" alt="React logo" class="skill-image" />
+            </div>
+            <div class="skill-list">
+              <ul data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom">
+                <li>
+                  <div>
+                    <span>> </span>
+                    <p>
+                      Experienced building web applications using latest technologies such as ES6, HTML5, CSS and Sass
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>> </span>
+                    <p>
+                      Experienced using JavaScript libraries such as React
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>> </span>
+                    <p> Experienced building UIs with Flexbox, CSS grid, and libraries like Bootstrap</p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>> </span>
+                    <p>
+                      Experienced with responsive design and mobile-first design
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>> </span>
+                    <p>Experienced with consuming server-side services using AJAX</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- backend section -->
+        <div class="skill-section before-border">
+          <div class="skill-area animated-parent back-end">
+            <div class="area area2">
+              <h3 class="area-title">Back End</h3>
+            </div>
+          </div>
+          <div class="list-area">
+            <div class="skill-images" data-aos="fade-left">
+              <img
+                src="./img/node.svg"
+                alt="Node JS logo"
+                class="skill-image"
+              />
+              <img
+                src="./img/express.svg"
+                alt="Express logo"
+                class="skill-image"
+              />
+              <img
+                src="./img/sql-server.svg"
+                alt="SQL Server logo"
+                class="skill-image"
+              />
+              <img
+                src="./img/mongodb.svg"
+                alt="Mongo DB logo"
+                class="skill-image"
+              />
+              <img
+                src="./img/graphql.svg"
+                alt="GraphQL logo"
+                class="skill-image"
+              />
+            </div>
+            <div class="skill-list">
+              <ul data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom">
+                <li>
+                  <div>
+                    <span>> </span>
+                    <p>
+                      Experienced building RESTful APIs with Node.js using Express and MongoDB
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>> </span>
+                    <p>
+                      Knowledgeable on databases like SQL Server and MongoDB
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>> </span>
+                    <p>
+                      Knowledgeable on GraphQL
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- others section -->
+        <div class="skill-section before-border">
+          <div class="skill-area animated-parent others">
+            <div class="area area3">
+              <h3 class="area-title">Others</h3>
+            </div>
+          </div>
+          <div class="list-area">
+            <div class="skill-images" data-aos="fade-left">
+              <img src="./img/java.svg" alt="Java icon" class="skill-image" />
+              <img
+                src="./img/csharp.svg"
+                alt="C Sharp icon"
+                class="skill-image"
+              />
+              <img src="./img/dotnet.svg" alt=".NET icon" class="skill-image" />
+              <img
+                src="./img/angular.svg"
+                alt="Angular icon"
+                class="skill-image"
+              />
+              <img
+                src="./img/jest.png"
+                alt="Jest icon"
+                class="skill-image"
+              />
+            </div>
+            <div class="skill-list">
+              <ul data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom">
+                <li>
+                  <div>
+                    <span>> </span>
+                    <p>
+                    Knowledgeable on Java and MVC architecture
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>> </span>
+                    <p>
+                      Knowledgeable on building applications using C# and the .NET framework
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <span>> </span>
+                    <p>Knolwedgeable on Angular and Jest</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects" >
+        <div class="container">
+          <h2 data-aos="fade-right">Projects</h2>
+          <p>
+            <ion-icon name="albums"></ion-icon>
+            These are all some personal projects I built on my own time. Feel
+            free to check them out!
+          </p>
+          <div class="projects-container">
+            <div class="project" data-aos="zoom-in" id="n2g-project">
+              <p class="description">
+                  <ion-icon name="copy"></ion-icon><span>Nutrition to Go:</span> Sass, Node, Express & optional Nodemailer usage. Responsive and animated
+              </p>
+              <div class="project-buttons">
+                <div class="button btn-project">
+                  <ion-icon name="code"></ion-icon>
+                  <a href="https://github.com/aosante/Nutrition-To-Go-Landing-Page" target="_blank" class="source-code">Source Code</a>
+                </div>
+                <div class="button btn-project">
+                  <ion-icon name="eye"></ion-icon>
+                  <a href="https://nutrition-to-go.herokuapp.com/" target="_blank" class=" view-project">View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="project" data-aos="zoom-in" id="nt-project">
+              <p class="description">
+                  <ion-icon name="copy"></ion-icon><span>Nosotros Tequila: </span> Sass, Node, Express & MongoDB to store the information submitted
+              </p>
+              <div class="project-buttons">
+                <div class="button btn-project">
+                  <ion-icon name="code"></ion-icon>
+                  <a href="https://github.com/aosante/NosotrosTequila" target="_blank" class="source-code">Source Code</a>
+                </div>
+                <div class="button btn-project">
+                  <ion-icon name="eye"></ion-icon>
+                  <a href="https://nosotros-tequila.herokuapp.com/" target="_blank" class="view-project">View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="project" data-aos="zoom-in" id="rcm-project">
+              <p class="description">
+                  <ion-icon name="copy"></ion-icon><span>React Contact Manager: </span>React, MySQL, Node & Express contacts manager
+              </p>
+              <div class="project-buttons">
+                <div class="button btn-project">
+                  <ion-icon name="code"></ion-icon>
+                  <a href="https://github.com/aosante/React-Contact-Manager" target="_blank" class="source-code">Source Code</a>
+                </div>
+                <div class="button btn-project">
+                  <ion-icon name="eye"></ion-icon>
+                  <a href="http://react-contacts-manager.herokuapp.com/" target="_blank" class="view-project">View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="project" data-aos="zoom-in" id="ff-project">
+              <p class="description">
+                <ion-icon name="copy"></ion-icon><span>First Factory Landing Replica: </span><strong>Desktop</strong> replica of First Factory's landing page using Sass <u>(*Mobile in progress)</u>
+              </p>
+              <div class="project-buttons">
+                <div class="button btn-project">
+                  <ion-icon name="code"></ion-icon>
+                  <a href="https://github.com/aosante/First-Factory-Landing-Replica" target="_blank" class="source-code">Source Code</a>
+                </div>
+                <div class="button btn-project">
+                  <ion-icon name="eye"></ion-icon>
+                  <a href="https://first-factory-replica.herokuapp.com" target="_blank" class="view-project">View project</a>
+                </div>
+              </div>
+            </div>
+            <div class="project" data-aos="zoom-in" id="sf-project">
+                <p class="description">
+                  <ion-icon name="copy"></ion-icon><span>Costa Rica Surf Forecast: </span>React forecasting app for surfers using the Magicseaweed API <u>(*In progress)</u>
+                </p>
+                <div class="project-buttons">
+                  <div class="button btn-project">
+                    <ion-icon name="code"></ion-icon>
+                    <a href="https://github.com/aosante/surf-forecasting-app" target="_blank" class="source-code">Source Code</a>
+                  </div>
+                  <div class="button btn-project">
+                    <ion-icon name="eye-off"></ion-icon>
+                    <a class="view-project" id="disabled">Soon..</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2 data-aos="fade-right">Contact</h2>
+        <div class="form-container animated-form">
+        <form name="contact" method="POST" data-netlify="true" onsubmit="return validateForm()">
+          <div class="input-group">
+            <label for="name">Name</label
+            ><input class="input" name="name" type="text" placeholder="Your name" />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label
+            ><input class="input" name="email" type="email" placeholder="Your email" />
+          </div>
+          <div class="input-group">
+            <label for=message">Message</label
+            ><textarea class="input" name="message" id="" cols="30" rows="8" placeholder="Your message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+        </form>
+      </div>
+      </section>  
+    </main>
+    <footer>
+        <div class="social-links">
+            <ul>
+              <li> <a href="https://github.com/aosante" target="_blank"><ion-icon name="logo-github"></ion-icon></a> </li>
+              <li> <a href="https://www.linkedin.com/in/andr%C3%A9s-osante-alfaro-845701ba/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a> </li>
+            </ul>
+          </div>
+      <div class="copyrights">
+        <p>Andrés Osante <span>&copy 2019</span></p>
+        <p><ion-icon name="call"></ion-icon> +(506) 8814-5840</p>
+      </div>
+    </footer> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({
+      duration: 1200
+    });</script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

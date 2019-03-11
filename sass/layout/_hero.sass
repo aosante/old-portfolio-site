@@ -1,0 +1,146 @@
+//nav style
+header 
+    height: 100vh
+    position: relative
+@keyframes gradient
+  0%
+    background-position: 0% 40%
+
+  50%
+    background-position: 100% 50%
+
+  100%
+    background-position: 0% 40%  
+    
+nav
+    display: flex
+    align-items: center
+    flex-direction: column 
+    @media#{$mq-small}
+      flex-direction: row
+    .logo 
+        flex: 1
+        @media#{$mq-small}
+          flex: 2
+        img
+            height: 8.5em
+            width: 10em 
+            @media#{$mq-small}
+              height: 10em
+              width: 12.5em
+            @media#{$mq-med}
+              height: 12em
+              width: 14em
+    ul
+        flex: 5
+        display: flex
+        justify-content: space-between 
+        width: 90%
+        @media#{$mq-small}
+          flex: 4
+          justify-content: space-around
+          width: 50%
+          &:hover li
+              transform: scale(1.1)
+              opacity: .6
+              filter: blur(4px)
+    ul li
+        list-style-type: none
+        display: inline-block
+        color: $white
+        transition: all .6s
+        a
+          padding: .15em
+        @media#{$mq-small}
+          &:hover
+            transform: scale(1.2)
+            opacity: 1
+            filter: blur(0)
+          &:hover a
+            background-color: $secondary
+            border-radius: 3px
+        
+//hero style
+.hero 
+    height: 65%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    @media#{$mq-small}
+      width: 80%
+      margin: 0 auto
+    h1
+      width: 80%
+      animation: fadeIn 1300ms ease
+      @media#{$mq-small}
+        text-align: left
+      .cr
+        font-weight: $font-bold
+        display: block
+    @keyframes fadeIn
+      0%
+        opacity: 0
+      50%
+        opacity: .7
+      100%
+        opacity: 1
+    .name 
+      span
+        display: inline-block
+        animation: bounceIn 350ms linear 0.2s 
+        animation-fill-mode: both
+        &:nth-child(2)
+          animation-delay: 1.10s
+        &:nth-child(3)
+          animation-delay: 1.15s
+        &:nth-child(4)
+          animation-delay: 1.20s
+        &:nth-child(5)
+          animation-delay: 1.25s
+        &:nth-child(6)
+          animation-delay: 2s
+      @keyframes bounceIn
+        0%
+          opacity: 0
+          transform: scale(0.3)
+          transform: translateY(-200px)
+        50%
+          opacity: 0.9
+          transform: scale(1.1)
+        80%
+          opacity: 1
+          transform: scale(0.89)
+          transform: translateY(-40px)
+        100%
+          opacify: 1
+          transform: scale(1)
+    .btn-hero
+      margin-top: 5em
+      position: relative
+
+//video background    
+header .container
+  height: 100%
+  background-color: rgba($main, .55)
+  z-index: 8888
+.video-wrap
+  opacity: .5
+  width: 100%
+  position: absolute
+  z-index: -1
+  top: 0
+  bottom: 0
+  left: 0
+  top: 0
+  background-size: cover
+  video
+    max-width: 100%
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+    
+        

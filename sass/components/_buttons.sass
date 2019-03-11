@@ -1,0 +1,77 @@
+.btn
+    padding: .35em .8em
+    .arrow
+        color: $main
+        background: $white
+        border-radius: 50%
+        font-size: 1.2em
+        margin-left: .3em
+        transform: translateY(.15em)
+        animation: beat 1.5s cubic-bezier(.30,.07,.19,.97) infinite
+    @keyframes beat
+        0%
+            transform: translateY(.15em)
+        10%
+            transform: scale(1.1) translateY(.15em)
+        30%
+            transform: translateY(.15em)
+        60%
+            transform: scale(1.1) translateY(.15em)
+        80%
+            transform: translateY(.15em)
+        100%
+            transform: translateY(.15em)
+.btn-hero
+    display: flex
+    animation: fadeIn 2000ms ease 2.3s 
+    animation-fill-mode: both
+.btn-primary
+    color: $white
+    border-radius: 5px
+    border: 1px solid $secondary
+    transition: transform 500ms
+    &:hover
+        background-color: $secondary
+        transform: scale(1.055)
+.btn-project
+    padding: .15em .2em
+    border: 2px solid $secondary
+    border-radius: 10px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    transition: background-color ease 420ms
+    @media#{$mq-med}
+        &:hover
+            background-color: $secondary
+            transform: scale(1.055)
+            ion-icon
+                color: $white
+    a, ion-icon
+        color: $white
+    ion-icon
+        margin-right: .3em
+        color: $secondary
+
+//scroll to top button  
+.scroll-top-btn
+    border: none
+    background-color: rgba($secondary, .9)
+    padding: .4em .5em
+    border-radius: 50px
+    z-index: 9999
+    display: none
+    position: fixed
+    bottom: 1.2em
+    right: 1.2em
+    @media#{$mq-small}
+        padding: .8em .9em
+    i
+        font-size: 1.8em
+        color: $white
+
+#disabled:hover
+    pointer-events: none
+    cursor: default
+
+    

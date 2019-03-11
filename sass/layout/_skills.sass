@@ -1,0 +1,172 @@
+#skills
+    background-color: $darker-bg
+    height: auto
+    position: relative
+    overflow: hidden 
+    #skills-title
+        margin-top: 2.7em
+        transform: translateY(1em)
+        @media#{$mq-small}
+            transform: translateY(0)
+    .about
+        text-align: left
+        width: 100%
+        margin: 4.5em auto 2em
+        height: auto
+        @media#{$mq-small}
+            display: flex
+            align-items: center
+        .personal-info
+            width: 90%
+            margin: 0 auto
+            @media#{$mq-small}
+                width: 100%
+                padding: 0 2em
+            p
+                text-indent: 1em
+                margin-bottom: .5em
+        .about-images
+            width: 98%
+            margin: 3em auto
+            display: flex
+            @media#{$mq-small}
+                width: 80%
+                padding: 0 2em
+            .card 
+                width: 33%
+                border: 2px solid $white
+                border-radius: 2px
+                box-shadow: 0 0 5px #000
+                height: 8em
+                img
+                    height: 100%
+                    width: 100%
+                p.label
+                    background-color: $white
+                    padding: 0 .2em
+                    text-align: center
+                    font-size: 1.16em
+                    box-shadow: 0 0 5px #000
+            #me
+                transform: rotate(-20deg)
+                width: 100% 
+    .before-border
+        margin-top: 0
+    .skill-section
+        margin-top: 7em
+        height: auto
+        &:last-child
+            margin-bottom: 3em
+            border-bottom: none
+        @media#{$mq-med}
+            display: flex
+            justify-content: flex-start
+            border-bottom: 2px solid $main
+            padding-bottom: 5em
+            width: 90%
+            margin: 0 auto
+        .list-area
+            flex: 2
+        .skill-area
+            @media#{$mq-med}
+                flex: 1
+                width: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+        .skill-area .area
+            background: $secondary
+            width: 146px
+            height: 145px
+            margin: 1.5em auto 0
+            padding: 1em 2.5em
+            text-align: center
+            transform: rotate(45deg)
+            display: flex
+            justify-content: center
+            align-items: center
+            border: 2px solid $main
+            box-shadow: 0 0 5px #000
+            @media#{$mq-small}
+                width: 180px
+                height: 179px
+            @media#{$mq-med}
+                width: 205px
+                height: 204px
+            .area-title
+                transform: rotate(-45deg) scale(1.7) translateY(.2em) translateX(-.1em)
+                color: $white
+                font-family: $cool-font
+    .list-area .skill-images
+        height: auto
+        margin: 5em auto 3em
+        display: flex
+        justify-content: space-around
+        .skill-image
+            width: 3.5em
+            height: 3.5em
+            @media#{$mq-small}
+                width: 4em
+                height: 4em
+            @media#{$mq-med}
+                width: 4.6em
+                height: 4.6em
+    .skill-list
+        width: 86%
+        margin: 0 auto
+        flex: 1
+        ul li
+            margin-bottom: 1em
+            text-align: left
+            div
+                display: flex
+                align-items: center
+                height: auto
+                p
+                    word-wrap: break-all
+                span
+                    font-size: 1.4em
+                    font-weight: $font-bold
+                    color: grey
+                    margin-right: .5em
+                
+//vShape
+#skills:after
+    content: ''
+    position: absolute
+    top: 100%
+    left: 0
+    width: 0
+    height: 0
+    border-top: solid 50px $darker-bg
+    border-left: solid 50vw transparent
+    border-right: solid 50vw transparent
+ 
+           
+.me-image
+    width: 34%
+
+
+
+
+//about title modification
+#about-title
+    color: $secondary
+    margin-top: 1.6em
+#skills
+    #about-title::after
+        content: ''
+        height: 2px
+        width: 20%
+        background-color: $main
+        display: block    
+        margin: 0 auto
+        margin-top: .4em  
+    #skills-title:after
+        content: ''
+        height: 2px
+        width: 20%
+        background-color: $secondary
+        display: block    
+        margin: 0 auto
+        margin-top: .4em  

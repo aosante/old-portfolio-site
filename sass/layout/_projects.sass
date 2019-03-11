@@ -1,0 +1,117 @@
+#projects
+    height: auto
+    background-color: rgba($main, 0.37)
+    background-image: url(../img/projects-bg.jpg)
+    background-blend-mode: multiply
+    background-size: cover
+    padding-bottom: 6em
+    overflow: hidden
+    @media#{$mq-med}
+        background-attachment: fixed
+    .container
+        margin-top: 4em
+        h2
+            color: $white
+            &::after
+                content: ''
+                height: 2px
+                width: 20%
+                background-color: $secondary
+                display: block
+                margin: 0 auto
+                margin-top: .4em
+        p
+            margin-top: 3em
+            width: 90%
+            margin: 3em auto 
+            text-align: left
+            text-indent: 1em
+            color: $white
+            ion-icon
+                transform: translateY(2px) translateX(-5px) 
+        .projects-container
+            height: auto
+            display: grid
+            grid-template-columns: 1fr
+            margin-top: 2em
+            grid-gap: 0
+            @media#{$mq-small}
+                display: flex
+                width: 83%
+                flex-wrap: wrap
+                margin: 0 auto
+                .project
+                    flex-basis: 47%
+            @media#{$mq-med}
+                display: flex
+                width: 70%
+                margin-top: 5em
+                flex-wrap: wrap
+                .project
+                    flex-basis: 45%
+            #n2g-project
+                background-image: url('../img/n2g.png')
+                background-blend-mode: multiply
+                background-size: cover
+            #nt-project
+                background-image: url('../img/nt.png')
+                background-blend-mode: multiply
+                background-size: cover
+            #rcm-project
+                background-image: url('../img/rcm.png')
+                background-blend-mode: multiply
+                background-size: cover
+            #ff-project
+                background-image: url('../img/ff.png')
+                background-blend-mode: multiply
+                background-size: cover
+            #sf-project
+                background-image: url('../img/soon.jpg')
+                background-blend-mode: multiply
+                background-size: cover
+                background-position: center
+            .project
+                width: 80%
+                background-color: rgba(38, 38, 38, .45)
+                margin: 0 auto
+                padding: 1.5em 1em
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                border-radius: 7px
+                box-shadow: 0 0 5px $white
+                overflow: hidden
+                height: 17em
+                @media(max-width: 1030px)
+                    background-color: rgba(38, 38, 38, .85)
+                &:hover
+                    background-color: rgba(38, 38, 38, .95)
+                &:not(:last-child)
+                    margin-bottom: 1em
+                p.description
+                    margin-top: 0
+                    span, ion-icon
+                        color: $secondary
+                        font-weight: $font-bold
+                        font-size: 108%
+                .project-buttons
+                    display: flex
+                    justify-content: space-around  
+                @media#{$mq-small}
+                    width: 95%    
+                    margin-bottom: 1em  
+                    height: 15em       
+                @media#{$mq-med}
+                    height: 20em
+                @media#{$mq-lg}                    
+                    p.description
+                        transform: translateY(-10em)
+                        transition: transform 450ms
+                    .project-buttons
+                        transform: translateY(10em)
+                        transition: transform 450ms
+                    &:hover p.description
+                        transform: translateY(0em)
+                    &:hover .project-buttons
+                        transform: translateY(0em)
+                
