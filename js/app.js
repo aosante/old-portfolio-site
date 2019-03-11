@@ -116,7 +116,6 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 //parralax
 window.addEventListener('scroll', _.throttle(parallax, 15));
 function parallax() {
-  console.log('caca');
   const parallaxBg = document.querySelector('.parallax-bg');
   let scroll = window.scrollY;
   parallaxBg.style.backgroundPosition = 'center ' + scroll * 0.45 + 'px';

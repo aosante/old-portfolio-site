@@ -568,9 +568,10 @@ header {
   background-image: url("../img/me-surf.jpg");
   background-position: cover;
   background-color: rgba(24, 24, 24, 0.75);
-  background-blend-mode: multiply;
+  background-blend-mode: saturation;
   background-size: 330%;
-  background-position: center; }
+  background-position: center;
+  background-repeat: no-repeat; }
 
 @media (min-width: 760px) {
   header {
