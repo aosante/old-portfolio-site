@@ -2,6 +2,17 @@
 header 
     height: 100vh
     position: relative
+    background-image: url('../img/me-surf.jpg')
+    background-position: cover
+    background-color: rgba($main, .75)
+    background-blend-mode: multiply
+    background-size: 330%;
+    background-position: center
+    @media#{$mq-small}
+      background-size: 200%
+    @media#{$mq-lg}
+      background-size: 100%
+    
 @keyframes gradient
   0%
     background-position: 0% 40%
@@ -119,28 +130,7 @@ nav
       margin-top: 5em
       position: relative
 
-//video background    
-header .container
-  height: 100%
-  background-color: rgba($main, .55)
-  z-index: 8888
-.video-wrap
-  opacity: .5
-  width: 100%
-  position: absolute
-  z-index: -1
-  top: 0
-  bottom: 0
-  left: 0
-  top: 0
-  background-size: cover
-  video
-    max-width: 100%
-    top: 0
-    left: 0
-    width: 100%
-    height: 100%
-    object-fit: cover
+
 
     
         

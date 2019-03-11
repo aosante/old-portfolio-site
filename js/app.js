@@ -1,13 +1,3 @@
-window.onload = function() {
-  const video = document.createElement('video');
-  const vidContainer = document.querySelector('.video-wrap');
-  video.src = './waves.mov';
-  video.setAttribute('autoplay', true);
-  video.setAttribute('loop', true);
-  video.muted = true;
-  vidContainer.appendChild(video);
-  console.log(video);
-};
 //animations on scroll------------------------------------------------------
 window.addEventListener('scroll', _.throttle(activateAnimation, 100));
 
