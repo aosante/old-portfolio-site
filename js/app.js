@@ -1,4 +1,4 @@
-console.log(document.getElementById('vid'));
+document.getElementById('vid').play();
 //animations on scroll------------------------------------------------------
 window.addEventListener('scroll', _.throttle(activateAnimation, 100));
 
