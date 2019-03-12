@@ -621,8 +621,7 @@ nav {
     flex: 5;
     display: flex;
     justify-content: space-between;
-    width: 90%;
-      width-justify-content: space-around; }
+    width: 95%; }
 
 @media (min-width: 760px) {
   nav ul {
