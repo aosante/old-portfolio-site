@@ -113,7 +113,7 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 });
 //-------------------------------------------------------------------------------
 
-//parralax
+//parralax---------------------------------------------------------------------
 window.addEventListener('scroll', _.throttle(parallax, 15));
 function parallax() {
   const parallaxBg = document.querySelector('.parallax-bg');

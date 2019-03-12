@@ -2,7 +2,6 @@
     background-color: $darker-bg
     height: auto
     position: relative
-    overflow: hidden 
     #skills-title
         margin-top: 2.7em
         transform: translateY(1em)
@@ -61,7 +60,7 @@
         @media#{$mq-med}
             display: flex
             justify-content: flex-start
-            border-bottom: 2px solid $main
+            border-bottom: 1px solid #999
             padding-bottom: 5em
             width: 90%
             margin: 0 auto
@@ -130,18 +129,6 @@
                     color: grey
                     margin-right: .5em
                 
-//vShape
-#skills:after
-    content: ''
-    position: absolute
-    top: 100%
-    left: 0
-    width: 0
-    height: 0
-    border-top: solid 50px $darker-bg
-    border-left: solid 50vw transparent
-    border-right: solid 50vw transparent
- 
            
 .me-image
     width: 34%
@@ -170,3 +157,16 @@
         display: block    
         margin: 0 auto
         margin-top: .4em  
+    
+#skills::after
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    width: 100%
+    margin-top: 0em
+    display: block
+    z-index: 9999
+    border-top: solid 50px $darker-bg
+    border-left: solid 50vw transparent
+    border-right: solid 50vw transparent
