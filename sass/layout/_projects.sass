@@ -71,7 +71,7 @@
                 background-size: cover
                 background-position: center
             .project
-                width: 80%
+                width: 90%
                 background-color: rgba(38, 38, 38, .45)
                 margin: 0 auto
                 padding: 1.5em 1em
@@ -82,6 +82,8 @@
                 box-shadow: 0 0 5px $white
                 overflow: hidden
                 height: 17em
+                @media(max-width: 600px)
+                    width: 90%
                 @media(max-width: 1030px)
                     background-color: rgba(38, 38, 38, .85)
                 &:hover
