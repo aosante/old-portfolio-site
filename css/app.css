@@ -515,15 +515,15 @@ label {
     padding: 0;
     font-family: "ZCOOL KuaiLe", cursive;
     color: #da328a;
-    font-size: 1.15em; }
+    font-size: 1.12em; }
 
 @media (min-width: 760px) {
   .name span {
-    font-size: 1.4em; } }
+    font-size: 1.2em; } }
 
 @media (min-width: 980px) {
   .name span {
-    font-size: 1.5em; } }
+    font-size: 1.34em; } }
 
 a.btn {
   font-size: 1em;
@@ -983,6 +983,11 @@ nav {
         background-blend-mode: multiply;
         background-size: cover;
         background-position: center; }
+      #projects .container .projects-container #p-project {
+        background-image: url("../img/py.png");
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-position: center; }
       #projects .container .projects-container .project {
         width: 90%;
         background-color: rgba(38, 38, 38, 0.45);
@@ -1018,12 +1023,11 @@ nav {
 @media (min-width: 760px) {
   #projects .container .projects-container .project {
     width: 95%;
-    margin-bottom: 1em;
-    height: 15em; } }
+    margin-bottom: 1em; } }
 
 @media (min-width: 980px) {
   #projects .container .projects-container .project {
-    height: 19em; } }
+    height: 20em; } }
 
 @media (min-width: 1030px) {
   #projects .container .projects-container .project p.description {

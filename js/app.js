@@ -55,7 +55,7 @@ removeBeforeContent();
 window.addEventListener('resize', removeBeforeContent);
 //------------------------------------------------------------------------
 
-//add fixed scroll to top button-------------------------------------------------
+//add fixed scroll-to-top button-------------------------------------------------
 const hero = document.querySelector('#header');
 const scrollTop = document.querySelector('.scroll-top-btn');
 window.addEventListener('scroll', _.throttle(toggleScrollTopBtn, 10));
