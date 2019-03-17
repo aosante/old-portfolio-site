@@ -605,18 +605,19 @@ nav {
   nav .logo {
     flex: 2; } }
     nav .logo img {
-      height: 8.5em;
-      width: 10em; }
+      height: 6.5em;
+      width: 8.5em;
+      margin-top: 1em; }
 
 @media (min-width: 760px) {
   nav .logo img {
-    height: 10em;
-    width: 12.5em; } }
+    height: 7em;
+    width: 9em; } }
 
 @media (min-width: 980px) {
   nav .logo img {
-    height: 12em;
-    width: 14em; } }
+    height: 8em;
+    width: 10em; } }
   nav ul {
     flex: 5;
     display: flex;
