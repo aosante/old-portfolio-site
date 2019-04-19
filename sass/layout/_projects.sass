@@ -42,11 +42,11 @@
                 margin: 0 auto
                 .project
                     flex-basis: 47%
-            @media#{$mq-med}
-                display: flex
-                width: 70%
+            @media(min-width: 1200px)
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
                 margin-top: 5em
-                flex-wrap: wrap
+                grid-gap: .75em;
                 .project
                     flex-basis: 45%
             #n2g-project

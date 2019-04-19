@@ -954,15 +954,14 @@ nav {
     margin: 0 auto; }
     #projects .container .projects-container .project {
       flex-basis: 47%; } }
-
-@media (min-width: 980px) {
-  #projects .container .projects-container {
-    display: flex;
-    width: 70%;
-    margin-top: 5em;
-    flex-wrap: wrap; }
-    #projects .container .projects-container .project {
-      flex-basis: 45%; } }
+      @media (min-width: 1200px) {
+        #projects .container .projects-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          margin-top: 5em;
+          grid-gap: .75em; }
+          #projects .container .projects-container .project {
+            flex-basis: 45%; } }
       #projects .container .projects-container #n2g-project {
         background-image: url("../img/n2g.png");
         background-blend-mode: multiply;
