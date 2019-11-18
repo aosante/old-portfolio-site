@@ -10,7 +10,9 @@
   "author": "Andrés Osante",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.11.0",
     "sweetalert": "^2.1.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0"
   }
 }
