@@ -16,71 +16,53 @@ observer.observe(contactForm);
 
 //remove :before content from skill sections in larger screens---------
 function removeBeforeContent() {
-  const skillSections = document.querySelectorAll('.skill-section');
-  skillSections.forEach(section => {
+  document.querySelectorAll('.skill-section').forEach(e => {
     window.innerWidth > 980
-      ? section.classList.remove('before-border')
-      : section.classList.add('before-border');
+      ? e.classList.remove('before-border')
+      : e.classList.add('before-border');
   });
 }
-
-removeBeforeContent();
-window.addEventListener('resize', removeBeforeContent);
-//------------------------------------------------------------------------
-
-//add fixed scroll to top button-------------------------------------------------
-// TODO: Refactor to using Intersection Observer !!!
-const hero = document.querySelector('#header');
-const scrollTop = document.querySelector('.scroll-top-btn');
-window.addEventListener('scroll', _.throttle(toggleScrollTopBtn, 10));
+removeBeforeContent(), window.addEventListener('resize', removeBeforeContent);
+const hero = document.querySelector('#header'),
+  scrollTop = document.querySelector('.scroll-top-btn');
 function toggleScrollTopBtn() {
-  const divBottom = hero.offsetTop + hero.scrollHeight;
-  if (
-    window.scrollY > divBottom &&
-    window.scrollY + window.innerHeight < document.body.offsetHeight
-  ) {
-    scrollTop.style.display = 'block';
-  } else {
-    scrollTop.style.display = 'none';
-  }
+  const e = hero.offsetTop + hero.scrollHeight;
+  window.scrollY > e &&
+  window.scrollY + window.innerHeight < document.body.offsetHeight
+    ? (scrollTop.style.display = 'block')
+    : (scrollTop.style.display = 'none');
 }
-//-------------------------------------------------------------------------------
-
-//form validation-------------------------------------------------
 function validateForm(e) {
-  let valid = false;
-  const inputs = document.querySelectorAll('.input');
-  let error = validateInputs(inputs);
-  if (error) {
-    swal({
-      title: 'Error',
-      text: 'Please fill out all fields before submitting',
-      icon: 'error'
-    });
-  } else {
-    valid = true;
-  }
-  return valid;
+  let o = !1;
+  const t = document.querySelectorAll('.input');
+  return (
+    validateInputs(t)
+      ? swal({
+          title: 'Error',
+          text: 'Please fill out all fields before submitting',
+          icon: 'error'
+        })
+      : (o = !0),
+    o
+  );
 }
-
-document.querySelector('form').addEventListener('input', e => {
-  e.target.classList.remove('error');
-});
-
-const validateInputs = inputs => {
-  let error = false;
-  inputs.forEach(input => {
-    if (input.value == '') {
-      input.classList.add('error');
-      error = true;
-    }
+window.addEventListener('scroll', _.throttle(toggleScrollTopBtn, 10)),
+  document.querySelector('form').addEventListener('input', e => {
+    console.log(e.target), e.target.classList.remove('error');
   });
-  return error;
+const validateInputs = e => {
+  let o = !1;
+  return (
+    e.forEach(e => {
+      '' == e.value && (e.classList.add('error'), (o = !0));
+    }),
+    o
+  );
 };
-
-//-------------------------------------------------------------------------------
-
-//smooth scroll
-var scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 800
-});
+var scroll = new SmoothScroll('a[href*="#"]', { speed: 800 });
+function parallax() {
+  const e = document.querySelector('.parallax-bg');
+  let o = window.scrollY;
+  e.style.backgroundPosition = 'center ' + 0.35 * o + 'px';
+}
+window.addEventListener('scroll', _.throttle(parallax, 10));
