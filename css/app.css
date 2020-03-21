@@ -1,20 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700,900|ZCOOL+KuaiLe");
-.me-image #me {
-  transform: rotate(420deg) scale(0.4);
-  opacity: 0;
-  border: none; }
-
-.me-image .triggered {
-  animation: spinIn 1600ms both cubic-bezier(0.61, 0.23, 0.34, 1.19) 900ms; }
-
-@keyframes spinIn {
-  from {
-    transform: rotate(420deg) scale(0.4);
-    opacity: 0; }
-  to {
-    transform: rotate(-20deg) scale(1);
-    opacity: 1; } }
-
 .form-container form {
   transform: scale(1); }
 
@@ -378,7 +362,7 @@ h1 {
 
 h2 {
   font-size: 2em;
-  font-family: "ZCOOL KuaiLe", cursive;
+  font-family: "Raleway", sans-serif;
   color: #555555;
   padding-top: .3em;
   letter-spacing: .1em; }
@@ -468,7 +452,7 @@ label {
   .name span {
     margin: 0;
     padding: 0;
-    font-family: "ZCOOL KuaiLe", cursive;
+    font-family: "Raleway", sans-serif;
     color: #da328a;
     font-size: 1.12em; }
 
@@ -786,7 +770,7 @@ nav {
       #skills .skill-section .skill-area .area .area-title {
         transform: rotate(-45deg) scale(1.7) translateY(0.2em) translateX(-0.1em);
         color: #fff;
-        font-family: "ZCOOL KuaiLe", cursive; }
+        font-family: "Raleway", sans-serif; }
   #skills .list-area .skill-images {
     height: auto;
     margin: 5em auto 3em;
@@ -864,7 +848,7 @@ nav {
 #projects {
   height: auto;
   background-color: rgba(24, 24, 24, 0.37);
-  background-image: url(../img/projects-bg.jpg);
+  background-image: url(../img/projects-bg-min.jpg);
   background-blend-mode: multiply;
   background-size: cover;
   padding-bottom: 6em;

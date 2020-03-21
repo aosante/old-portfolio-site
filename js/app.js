@@ -1,44 +1,17 @@
-//animations on scroll------------------------------------------------------
-window.addEventListener('scroll', _.throttle(activateAnimation, 150));
-
-//animate goes inside a different function in order to throttle it with lodash
-function activateAnimation() {
-  const animatedParents = document.querySelectorAll('.animated-parent');
-  const animatedForm = document.querySelector('.animated-form');
-  animatedParents.forEach(parent => {
-    animate(parent);
-  });
-  animateForm(animatedForm);
-}
-
-const animate = elem => {
-  //half of the parent element
-  let activateAt =
-    window.scrollY + window.innerHeight - elem.scrollHeight - 500;
-  // distance from bottom of the div to the top
-  const divBottom = elem.offsetTop + elem.scrollHeight;
-  let halfShown = activateAt > elem.offsetTop;
-  let isnotGone = window.scrollY < divBottom;
-  const children = elem.children;
-  Array.from(children).forEach(child => {
-    if (halfShown && isnotGone) {
-      child.classList.add('triggered');
+const options = {};
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    // note: entry.target.className can be checked to add different class names or animations
+    if (entry.isIntersecting) {
+      entry.target.classList.toggle('triggered');
     }
   });
-};
-/*Becuase of the form's height, the point in which the animation is activated needs to be in the middle
-and not at the bottom like other animations hence, this special function*/
-const animateForm = formContainer => {
-  let activateAt =
-    window.scrollY + window.innerHeight - formContainer.scrollHeight / 2;
-  const divBottom = formContainer.offsetTop + formContainer.scrollHeight;
-  let halfShown = activateAt > formContainer.offsetTop;
-  let isnotGone = window.scrollY < divBottom;
-  const form = formContainer.children[0];
-  if (halfShown && isnotGone) {
-    form.classList.add('triggered');
-  }
-};
+}, options);
+
+const contactForm = document.querySelector('.animated-form');
+
+observer.observe(contactForm);
+
 //-------------------------------------------------------------------------------
 
 //remove :before content from skill sections in larger screens---------
@@ -56,6 +29,7 @@ window.addEventListener('resize', removeBeforeContent);
 //------------------------------------------------------------------------
 
 //add fixed scroll to top button-------------------------------------------------
+// TODO: Refactor to using Intersection Observer !!!
 const hero = document.querySelector('#header');
 const scrollTop = document.querySelector('.scroll-top-btn');
 window.addEventListener('scroll', _.throttle(toggleScrollTopBtn, 10));
@@ -90,7 +64,6 @@ function validateForm(e) {
 }
 
 document.querySelector('form').addEventListener('input', e => {
-  console.log(e.target);
   e.target.classList.remove('error');
 });
 
