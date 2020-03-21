@@ -1,18 +1,35 @@
+const scrollTop = document.querySelector('.scroll-top-btn');
 const options = {};
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    // note: entry.target.className can be checked to add different class names or animations
-    if (entry.isIntersecting) {
+    if (entry.isIntersecting && entry.target.id === 'form') {
       entry.target.classList.toggle('triggered');
+    }
+    if (entry.isIntersecting && entry.target.id === 'header') {
+      scrollTop.classList.add('hide');
+      window.addEventListener('scroll', parallax, {
+        capture: false,
+        passive: true
+      });
+    } else {
+      if (entry.target.id === 'header') {
+        scrollTop.classList.remove('hide');
+        window.removeEventListener('scroll', parallax, {
+          capture: false,
+          passive: true
+        });
+      }
     }
   });
 }, options);
 
 const contactForm = document.querySelector('.animated-form');
+const sectionHero = document.querySelector('.parallax-bg');
+const footer = document.querySelector('#footer');
+const sections = [contactForm, sectionHero, footer];
+sections.forEach(section => observer.observe(section));
 
-observer.observe(contactForm);
-
-//-------------------------------------------------------------------------------
+// TODO: REPLACE ALL SCROLL EVENT LISTENERS WITH INTERSECTION OBSERVER
 
 //remove :before content from skill sections in larger screens---------
 function removeBeforeContent() {
@@ -23,15 +40,12 @@ function removeBeforeContent() {
   });
 }
 removeBeforeContent(), window.addEventListener('resize', removeBeforeContent);
-const hero = document.querySelector('#header'),
-  scrollTop = document.querySelector('.scroll-top-btn');
-function toggleScrollTopBtn() {
-  const e = hero.offsetTop + hero.scrollHeight;
-  window.scrollY > e &&
-  window.scrollY + window.innerHeight < document.body.offsetHeight
-    ? (scrollTop.style.display = 'block')
-    : (scrollTop.style.display = 'none');
-}
+
+// Form validation
+document.querySelector('form').addEventListener('input', e => {
+  console.log(e.target), e.target.classList.remove('error');
+});
+
 function validateForm(e) {
   let o = !1;
   const t = document.querySelectorAll('.input');
@@ -46,10 +60,6 @@ function validateForm(e) {
     o
   );
 }
-window.addEventListener('scroll', _.throttle(toggleScrollTopBtn, 10)),
-  document.querySelector('form').addEventListener('input', e => {
-    console.log(e.target), e.target.classList.remove('error');
-  });
 const validateInputs = e => {
   let o = !1;
   return (
@@ -59,10 +69,10 @@ const validateInputs = e => {
     o
   );
 };
-var scroll = new SmoothScroll('a[href*="#"]', { speed: 800 });
-function parallax() {
+
+const parallax = _ => {
   const e = document.querySelector('.parallax-bg');
   let o = window.scrollY;
   e.style.backgroundPosition = 'center ' + 0.35 * o + 'px';
-}
-window.addEventListener('scroll', _.throttle(parallax, 10));
+};
+// add this event listener only if hero section is intersecting, remove if not.

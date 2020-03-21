@@ -12,7 +12,7 @@
     <title>Andrés Osante</title>
   </head>
   <body>
-      <button class="scroll-top-btn"><a href="#header"> <i class="fa fa-chevron-up"></i> </a></button>
+      <button class="scroll-top-btn hide"><a href="#header"> <i class="fa fa-chevron-up"></i> </a></button>
     <header id="header" class="parallax-bg">
       <nav>
         <div class="logo">
@@ -371,7 +371,7 @@
       <section id="contact">
         <h2>Contact</h2>
         <div class="form-container">
-        <form name="contact" class="animated-form" method="POST" data-netlify="true" onsubmit="return validateForm()">
+        <form id="form" name="contact" class="animated-form" method="POST" data-netlify="true" onsubmit="return validateForm()">
           <div class="input-group">
             <label for="name">Name</label
             ><input class="input" name="name" type="text" placeholder="Your name" />
@@ -389,7 +389,7 @@
       </div>
       </section>  
     </main>
-    <footer>
+    <footer id="footer" >
         <div class="social-links">
             <ul>
               <li> <a href="https://github.com/aosante" target="_blank"><ion-icon name="logo-github"></ion-icon></a> </li>

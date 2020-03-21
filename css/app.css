@@ -1057,12 +1057,13 @@ nav {
 footer {
   height: 100%;
   background-color: #262626;
-  padding: 1.5em 2em; }
+  padding: 1.5em 3.5em; }
 
 @media (min-width: 760px) {
   footer {
     display: flex;
-    justify-content: space-between; } }
+    justify-content: space-between;
+    align-items: center; } }
   footer .social-links ul {
     width: 48%;
     margin: 0 auto;
@@ -1155,18 +1156,18 @@ footer {
 
 .scroll-top-btn {
   border: none;
-  background-color: rgba(218, 50, 138, 0.9);
-  padding: .4em .5em;
+  background-color: rgba(218, 50, 138, 0.6);
+  padding: .3em .4em;
   border-radius: 50px;
   z-index: 9999;
-  display: none;
+  display: block;
   position: fixed;
   bottom: 1.2em;
   right: 1.2em; }
 
 @media (min-width: 760px) {
   .scroll-top-btn {
-    padding: .8em .9em; } }
+    padding: .6em .7em; } }
   .scroll-top-btn i {
     font-size: 1.8em;
     color: #fff; }
@@ -1174,3 +1175,6 @@ footer {
 #disabled:hover {
   pointer-events: none;
   cursor: default; }
+
+.hide {
+  display: none; }

@@ -56,16 +56,16 @@
 //scroll to top button  
 .scroll-top-btn
     border: none
-    background-color: rgba($secondary, .9)
-    padding: .4em .5em
+    background-color: rgba($secondary, .6)
+    padding: .3em .4em
     border-radius: 50px
     z-index: 9999
-    display: none
+    display: block
     position: fixed
     bottom: 1.2em
     right: 1.2em
     @media#{$mq-small}
-        padding: .8em .9em
+        padding: .6em .7em
     i
         font-size: 1.8em
         color: $white
@@ -73,5 +73,9 @@
 #disabled:hover
     pointer-events: none
     cursor: default
+
+.hide
+    display: none
+
 
     
