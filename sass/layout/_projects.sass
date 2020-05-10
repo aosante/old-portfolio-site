@@ -12,14 +12,6 @@
         margin-top: 4em
         h2
             color: $white
-            &::after
-                content: ''
-                height: 2px
-                width: 20%
-                background-color: $secondary
-                display: block
-                margin: 0 auto
-                margin-top: .4em
         p
             margin-top: 3em
             width: 90%
@@ -63,10 +55,11 @@
                 background-blend-mode: multiply
                 background-size: cover
                 background-position: center
-            #ff-project
-                background-image: url('../img/ff.png')
+            #db-project
+                background-image: url('../img/db.png')
                 background-blend-mode: multiply
                 background-size: cover
+                background-position: center
             #sf-project
                 background-image: url('../img/soon.jpg')
                 background-blend-mode: multiply
@@ -110,7 +103,7 @@
                     width: 95%    
                     margin-bottom: 1em  
                 @media#{$mq-med}
-                    height: 20em
+                    height: 18em
                 @media#{$mq-lg}                    
                     p.description
                         transform: translateY(-10em)

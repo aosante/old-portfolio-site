@@ -1,10 +1,13 @@
 #skills
-    background-color: $darker-bg
+    background-color: $main
     height: auto
     position: relative
+    h3
+        color: $white
     #skills-title
         margin-top: 2.7em
         transform: translateY(1em)
+        color: $white
         @media#{$mq-small}
             transform: translateY(0)
     .about
@@ -24,6 +27,7 @@
             p
                 text-indent: 1em
                 margin-bottom: .5em
+                color: $white
         .about-images
             width: 98%
             margin: 3em auto
@@ -123,10 +127,11 @@
                 height: auto
                 p
                     word-wrap: break-all
+                    color: $white
                 span
                     font-size: 1.4em
                     font-weight: $font-bold
-                    color: grey
+                    color: $white
                     margin-right: .5em
                 
            
@@ -134,30 +139,9 @@
     width: 34%
 
 
-
-
-//about title modification
 #about-title
-    color: $secondary
-    margin-top: .8em
-#skills
-    #about-title::after
-        content: ''
-        height: 2px
-        width: 20%
-        background-color: $main
-        display: block    
-        margin: 0 auto
-        margin-top: .4em  
-    #skills-title:after
-        content: ''
-        height: 2px
-        width: 20%
-        background-color: $secondary
-        display: block    
-        margin: 0 auto
-        margin-top: .4em  
-    
+    color: $white
+    margin-top: .8em  
 #skills::after
     content: ''
     position: absolute
@@ -166,6 +150,6 @@
     width: 100%
     display: block
     z-index: 9999
-    border-top: solid 50px $darker-bg
+    border-top: solid 50px $main
     border-left: solid 50vw transparent
     border-right: solid 50vw transparent

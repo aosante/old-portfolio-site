@@ -659,12 +659,15 @@ nav {
     margin-top: 2em; } }
 
 #skills {
-  background-color: #f4f4f4;
+  background-color: #181818;
   height: auto;
   position: relative; }
+  #skills h3 {
+    color: #fff; }
   #skills #skills-title {
     margin-top: 2.7em;
-    transform: translateY(1em); }
+    transform: translateY(1em);
+    color: #fff; }
 
 @media (min-width: 760px) {
   #skills #skills-title {
@@ -689,7 +692,8 @@ nav {
     padding: 0 2em; } }
       #skills .about .personal-info p {
         text-indent: 1em;
-        margin-bottom: .5em; }
+        margin-bottom: .5em;
+        color: #fff; }
     #skills .about .about-images {
       width: 98%;
       margin: 3em auto;
@@ -801,37 +805,20 @@ nav {
         align-items: center;
         height: auto; }
         #skills .skill-list ul li div p {
-          word-wrap: break-all; }
+          word-wrap: break-all;
+          color: #fff; }
         #skills .skill-list ul li div span {
           font-size: 1.4em;
           font-weight: 700;
-          color: grey;
+          color: #fff;
           margin-right: .5em; }
 
 .me-image {
   width: 34%; }
 
 #about-title {
-  color: #da328a;
+  color: #fff;
   margin-top: .8em; }
-
-#skills #about-title::after {
-  content: '';
-  height: 2px;
-  width: 20%;
-  background-color: #181818;
-  display: block;
-  margin: 0 auto;
-  margin-top: .4em; }
-
-#skills #skills-title:after {
-  content: '';
-  height: 2px;
-  width: 20%;
-  background-color: #da328a;
-  display: block;
-  margin: 0 auto;
-  margin-top: .4em; }
 
 #skills::after {
   content: '';
@@ -841,7 +828,7 @@ nav {
   width: 100%;
   display: block;
   z-index: 9999;
-  border-top: solid 50px #f4f4f4;
+  border-top: solid 50px #181818;
   border-left: solid 50vw transparent;
   border-right: solid 50vw transparent; }
 
@@ -861,14 +848,6 @@ nav {
     margin-top: 4em; }
     #projects .container h2 {
       color: #fff; }
-      #projects .container h2::after {
-        content: '';
-        height: 2px;
-        width: 20%;
-        background-color: #da328a;
-        display: block;
-        margin: 0 auto;
-        margin-top: .4em; }
     #projects .container p {
       margin-top: 3em;
       width: 90%;
@@ -915,10 +894,11 @@ nav {
         background-blend-mode: multiply;
         background-size: cover;
         background-position: center; }
-      #projects .container .projects-container #ff-project {
-        background-image: url("../img/ff.png");
+      #projects .container .projects-container #db-project {
+        background-image: url("../img/db.png");
         background-blend-mode: multiply;
-        background-size: cover; }
+        background-size: cover;
+        background-position: center; }
       #projects .container .projects-container #sf-project {
         background-image: url("../img/soon.jpg");
         background-blend-mode: multiply;
@@ -968,7 +948,7 @@ nav {
 
 @media (min-width: 980px) {
   #projects .container .projects-container .project {
-    height: 20em; } }
+    height: 18em; } }
 
 @media (min-width: 1030px) {
   #projects .container .projects-container .project p.description {
@@ -986,14 +966,6 @@ nav {
   background-color: #181818; }
   #contact h2 {
     color: #fff; }
-    #contact h2::after {
-      content: '';
-      height: 2px;
-      width: 20%;
-      background-color: #da328a;
-      display: block;
-      margin: 0 auto;
-      margin-top: .4em; }
   #contact .form-container {
     height: 90vh;
     display: flex;
@@ -1043,7 +1015,7 @@ nav {
         background-color: transparent;
         margin-top: 1.3em;
         width: 40%;
-        margin: 2em auto 0;
+        margin: 3em auto 0;
         text-align: center; }
         #contact .form-container form .btn-submit:hover {
           background-color: #da328a;
