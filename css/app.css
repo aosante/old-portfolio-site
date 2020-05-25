@@ -884,8 +884,8 @@ nav {
         background-image: url("../img/n2g.png");
         background-blend-mode: multiply;
         background-size: cover; }
-      #projects .container .projects-container #nt-project {
-        background-image: url("../img/nt.png");
+      #projects .container .projects-container #pdc-project {
+        background-image: url("../img/pdc.png");
         background-blend-mode: multiply;
         background-size: cover;
         background-position: center; }
