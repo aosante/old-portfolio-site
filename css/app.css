@@ -432,7 +432,7 @@ a {
 
 a.nav-link {
   color: #fff;
-  font-size: 1.2em; }
+  font-size: 1em; }
 
 label {
   color: rgba(255, 255, 255, 0.85);
@@ -542,7 +542,7 @@ nav {
 
 @media (min-width: 760px) {
   nav .logo {
-    flex: 2; } }
+    flex: 1; } }
     nav .logo img {
       height: 6.5em;
       width: 8.5em;
@@ -561,13 +561,15 @@ nav {
     flex: 5;
     display: flex;
     justify-content: space-between;
-    width: 95%; }
+    width: 90%;
+    margin-top: 2.5em; }
 
 @media (min-width: 760px) {
   nav ul {
-    flex: 4;
+    margin-top: none;
+    flex: 3;
     justify-content: space-around;
-    width: 50%; }
+    width: 30%; }
     nav ul:hover li {
       transform: scale(1.1);
       opacity: .6;
@@ -684,12 +686,17 @@ nav {
     align-items: center; } }
     #skills .about .personal-info {
       width: 90%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      flex: 4; }
 
 @media (min-width: 760px) {
   #skills .about .personal-info {
     width: 100%;
     padding: 0 2em; } }
+
+@media (min-width: 1430px) {
+  #skills .about .personal-info {
+    flex: 3; } }
       #skills .about .personal-info p {
         text-indent: 1em;
         margin-bottom: .5em;
@@ -697,12 +704,17 @@ nav {
     #skills .about .about-images {
       width: 98%;
       margin: 3em auto;
-      display: flex; }
+      display: flex;
+      flex: 3; }
 
 @media (min-width: 760px) {
   #skills .about .about-images {
     width: 80%;
     padding: 0 2em; } }
+
+@media (min-width: 1430px) {
+  #skills .about .about-images {
+    flex: 1.5; } }
       #skills .about .about-images .card {
         width: 33%;
         border: 2px solid #fff;

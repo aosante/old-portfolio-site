@@ -33,7 +33,7 @@ nav
     .logo 
         flex: 1
         @media#{$mq-small}
-          flex: 2
+          flex: 1
         img
             height: 6.5em
             width: 8.5em 
@@ -48,11 +48,13 @@ nav
         flex: 5
         display: flex
         justify-content: space-between
-        width: 95%  
+        width: 90%  
+        margin-top: 2.5em
         @media#{$mq-small}
-          flex: 4
+          margin-top: none
+          flex: 3
           justify-content: space-around
-          width: 50%
+          width: 30%
           &:hover li
               transform: scale(1.1)
               opacity: .6

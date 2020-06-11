@@ -21,9 +21,12 @@
         .personal-info
             width: 90%
             margin: 0 auto
+            flex: 4
             @media#{$mq-small}
                 width: 100%
                 padding: 0 2em
+            @media#{$mq-xlg}
+                flex: 3
             p
                 text-indent: 1em
                 margin-bottom: .5em
@@ -32,9 +35,12 @@
             width: 98%
             margin: 3em auto
             display: flex
+            flex: 3
             @media#{$mq-small}
                 width: 80%
                 padding: 0 2em
+            @media#{$mq-xlg}
+                flex: 1.5
             .card 
                 width: 33%
                 border: 2px solid $white
