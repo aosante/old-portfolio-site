@@ -835,7 +835,7 @@ nav {
 #projects {
   height: auto;
   background-color: rgba(24, 24, 24, 0.37);
-  background-image: url(../img/projects-bg-min.jpg);
+  background-image: url(../img/projects-bg.jpg);
   background-blend-mode: multiply;
   background-size: cover;
   padding-bottom: 6em;
@@ -890,7 +890,7 @@ nav {
         background-size: cover;
         background-position: center; }
       #projects .container .projects-container #rcm-project {
-        background-image: url("../img/rcm.png");
+        background-image: url("../img/met.png");
         background-blend-mode: multiply;
         background-size: cover;
         background-position: center; }
@@ -911,7 +911,7 @@ nav {
         background-position: center; }
       #projects .container .projects-container .project {
         width: 90%;
-        background-color: rgba(38, 38, 38, 0.45);
+        background-color: rgba(38, 38, 38, 0.75);
         margin: 0 auto;
         padding: 1.5em 1em;
         display: flex;
