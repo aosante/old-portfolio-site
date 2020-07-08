@@ -917,8 +917,8 @@ nav {
         background-blend-mode: multiply;
         background-size: cover;
         background-position: center; }
-      #projects .container .projects-container #p-project {
-        background-image: url("../img/py.png");
+      #projects .container .projects-container #td-project {
+        background-image: url("../img/td.png");
         background-blend-mode: multiply;
         background-size: cover;
         background-position: center; }
