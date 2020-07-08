@@ -752,6 +752,8 @@ nav {
     margin: 0 auto; } }
     #skills .skill-section .list-area {
       flex: 2; }
+    #skills .skill-section .dark {
+      filter: drop-shadow(1px 1px 0.5px rgba(255, 255, 255, 0.7)); }
 
 @media (min-width: 980px) {
   #skills .skill-section .skill-area {
